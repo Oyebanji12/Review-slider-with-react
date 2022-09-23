@@ -1,13 +1,135 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F1F5F8; 
+  font-size: 0.875rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h4{
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.75rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+
+section{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+/* main{
+  width: 100vh;
+  display: grid;
+  place-items: center;
+} */
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: hsl(209, 61%, 16%);;
+}
+
+.underline{
+  width: 8rem;
+  height: 0.25rem;
+  background-color:  hsl(205, 78%, 60%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container{
+  width: 80vw;
+  max-width:800px;
+}
+
+.review{
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.33rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.img-container{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.person-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+
+}
+
+/* not apply */
+/* .quote-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background:  hsl(205, 78%, 60%);
+  color: #fff;
+} */
+
+.author{
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: hsl(209, 61%, 16%);
+}
+.job{
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.95rem;
+}
+.info{
+  margin-bottom: 0.75rem;
+  color: hsl(209, 61%, 16%);
+  font-size: 1rem;
+}
+
+ .prev-btn, .next-btn {
+  color: hsl(205, 90%, 76%);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.next-btn:hover, .prev-btn:hover{
+  color: hsl(205, 78%, 60%);
+}
+
+.random-btn {
+  margin-top: 0.5rem;
+  background: hsl(210, 22%, 49%);
+  color: hsl(210, 36%, 96%);  
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.random-btn:hover{
+  background: hsl(205, 78%, 60%);
+  color: hsl(205, 86%, 17%);
 }
